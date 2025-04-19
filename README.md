@@ -12,7 +12,7 @@
 
 ## 🚀 Demo
 
-Coming soon...
+https://aryan-profile.vercel.app/
 
 ---
 
