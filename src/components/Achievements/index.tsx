@@ -40,8 +40,8 @@ export function Achievements() {
         <AchievementsContainer
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-            gap: '2rem', // Standard gap for spacing
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', // Adjusted for smaller screens
+            gap: '1.5rem', // Reduced gap for better spacing on smaller screens
             padding: '1rem',
           }}
         >
@@ -86,7 +86,7 @@ export function Achievements() {
               >
                 <h2
                   style={{
-                    fontSize: '1.25rem',
+                    fontSize: '1.1rem', // Slightly smaller font size for mobile
                     fontWeight: '600',
                     marginBottom: '0.5rem',
                   }}
