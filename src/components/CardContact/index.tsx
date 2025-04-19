@@ -26,7 +26,7 @@ export function CardContact() {
 
             {/* Contact Links Section */}
             <div id="contact" style={{ marginTop: '2rem' }}>
-              <p weight="bold" >Email: <a href="mailto:your-email@example.com">jaryan728@gamil.com</a></p>
+            <p style={{ fontWeight: 600 }}>Email: <a href="mailto:your-email@example.com">jaryan728@gamil.com</a></p>
               <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
                 <Link href="https://github.com/jaryan728" target="_blank" legacyBehavior>
                   <ButtonAlt>

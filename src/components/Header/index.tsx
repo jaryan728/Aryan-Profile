@@ -7,9 +7,6 @@ import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { Button } from '../../styles/styles'
 import { useThemeContext } from '../../context/ThemeContext'
 import { FaSun, FaMoon } from 'react-icons/fa';
-import LanguageSwitcher from '../Language/index';
-import Settings from '../Settings/SettingsButton';
-import AudioPlayer from '../Music/AudioPlayer';
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
 

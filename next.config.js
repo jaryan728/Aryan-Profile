@@ -6,7 +6,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   compiler: {
-    // Enables the styled-components SWC transform
     styledComponents: true
   },
   audio: {
@@ -26,10 +25,7 @@ const nextConfig = {
     }
     return config
   },
-}
-
-
-module.exports = {
-  i18n,
-  nextConfig
+  i18n // ✅ this is now properly merged in
 };
+
+module.exports = nextConfig;

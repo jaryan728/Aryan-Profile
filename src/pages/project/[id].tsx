@@ -292,41 +292,41 @@ export default function Projeto({ project }: ProjectProps) {
   </>;
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }: any) => {
-  const project = projects.map(project => ({
-    id: project.id,
-    link: project.url,
-    imgUrl: project.img,
-    banner: project.banner,
-    icon: project.icon,
-    title: project.title,
-    type: project.type,
-    github: project.github,
-    web: project.web,
-    description: project.description,
-    tags: project.tags,
-    print: project.print,
-    gif: project.gif,
-    year: project.year,
-    status: project.status,
-    video: project.video,
-    tech: project.tech,
-    backgroundImage: project.backgroundImage,
-    blog: project.blog,
-    trelloboard: project.trelloboard,
-    trelloedit: project.trelloedit,
-    team: project.team
-  }))
+// export const getStaticProps: GetStaticProps = async ({ params }: any) => {
+//   const project = projects.map(project => ({
+//     id: project.id,
+//     link: project.url,
+//     imgUrl: project.img,
+//     banner: project.banner,
+//     icon: project.icon,
+//     title: project.title,
+//     type: project.type,
+//     github: project.github,
+//     web: project.web,
+//     description: project.description,
+//     tags: project.tags,
+//     print: project.print,
+//     gif: project.gif,
+//     year: project.year,
+//     status: project.status,
+//     video: project.video,
+//     tech: project.tech,
+//     backgroundImage: project.backgroundImage,
+//     blog: project.blog,
+//     trelloboard: project.trelloboard,
+//     trelloedit: project.trelloedit,
+//     team: project.team
+//   }))
 
-  const idProject = project.find(project => project.link === params.id)
+//   const idProject = project.find(project => project.link === params.id)
 
-  return {
-    props: {
-      project: idProject
-    },
-    revalidate: 10
-  }
-}
+//   return {
+//     props: {
+//       project: idProject
+//     },
+//     revalidate: 10
+//   }
+// }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
